@@ -7,9 +7,14 @@ import "./SliderStyle.css";
 
 const Slider = () => {
   const [active, setActive] = useState(0);
-  const slides = [{ img: allen }, { img: football}, { img: creed },{img:hog}];
-  const activeStyle = { left: `${0}%` }; // Adjust the left position based on the active index
-
+  const slides = [
+    { img: allen,name:"Alan Wake 2"},
+    { img: football,name:"EA SPORTS FC 24" },
+    { img: creed,name:"Assassin's creed Mirage" },
+    { img: hog,name:"LORT: Return to Moria" },
+  ];
+  const activeStyle = { left: `${-10}%` }; // Adjust the left position based on the active index
+  
   useEffect(() => {
     const interval = setInterval(() => {
       // Automatically move to the next slide
@@ -19,7 +24,9 @@ const Slider = () => {
     // Clear the interval on component unmount to avoid memory leaks
     return () => clearInterval(interval);
   }, [active, slides.length]);
-
+  const activenavStyle={
+     background:"#18181c"
+  }
   return (
     <div className="slider__container">
       <div className="track__container">
@@ -33,6 +40,14 @@ const Slider = () => {
             />
           </div>
         ))}
+        <div className="slider__navigation">
+          {slides.map((slide, index) => (
+            <div className="slider-nav-item" onClick={()=>{setActive(index)}} style={active===index?activenavStyle:{}}>
+              <img className="nav--img" src={slide.img} ></img>
+              <p>{slide.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

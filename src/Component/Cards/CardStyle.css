@@ -1,15 +1,37 @@
 .card__container {
- 
   color: white;
   width: 75%;
   margin: 0 auto;
+  position: relative;
+}
+.cardEffect {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  display: none;
+  position: absolute;
+  height: 98%;
+  z-index: 2;
+
+  color: white;
+}
+.card--imageContainer {
+  position: relative;
+}
+.card__container--plusIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.3em;
 }
 .card {
   width: max-content;
   color: white;
+  position: relative;
 }
 .card__container--image {
   width: 200px;
+  border-radius: 0.3rem;
+  position: relative;
 }
 
 .card_description--cardType {
@@ -34,4 +56,32 @@
 }
 .opacity-low {
   opacity: 0.5;
+}
+.card--imageContainer:hover {
+  opacity: 1;
+}
+.card:hover .cardEffect {
+  display: block;
+}
+.card:hover .cardEffect--icon {
+  opacity: 1;
+}
+
+.cardEffect--icon {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 85%;
+  top: 2%;
+  padding: 3px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+
+  cursor: pointer;
 }

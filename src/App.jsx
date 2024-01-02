@@ -15,6 +15,8 @@ function App() {
       <SearchBar/>
       <Slider/>
       <CardPage/>
+      <CardPage/>
+      <CardPage/>
       
     </>
   )

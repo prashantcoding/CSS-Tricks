@@ -1,0 +1,20 @@
+
+
+
+.categorycard{
+    color: white;
+    margin-bottom: 1em;
+}
+.category__container--image{
+    width: 100px;
+    
+}
+.Category--imageContainer{
+    display: flex;
+    
+    gap:1em;
+
+}
+.border--medium{
+    border-radius: 15px;
+}

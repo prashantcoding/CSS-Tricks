@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
-import allen from "../../assets/allen_wake.avif";
-import creed from "../../assets/creed.avif"; // Make sure the image file names match your actual file names
-import hog from "../../assets/hog.avif";
-import football from "../../assets/football.avif";
+
 import "./SliderStyle.css";
 
-const Slider = () => {
+const Slider = ({slides}) => {
   const [active, setActive] = useState(0);
-  const slides = [
-    { img: allen,name:"Alan Wake 2"},
-    { img: football,name:"EA SPORTS FC 24" },
-    { img: creed,name:"Assassin's creed Mirage" },
-    { img: hog,name:"LORT: Return to Moria" },
-  ];
+  
   const activeStyle = { left: `${-10}%` }; // Adjust the left position based on the active index
   
   useEffect(() => {

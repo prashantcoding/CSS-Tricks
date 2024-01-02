@@ -24,6 +24,7 @@ const CardPage = () => {
           fontWeight: "normal",
           marginTop: "3em",
           display: "flex",
+          
           justifyContent: "space-between",
         }}
       >
@@ -42,7 +43,7 @@ const CardPage = () => {
         style={{
           display: "flex",
           gap: "1em",
-
+          overflow:"hidden",
           marginTop: "2rem",
         }}
       >

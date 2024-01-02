@@ -46,6 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: .3em;
 }
 .card_descripton--discount {
   background-color: #0074e4;

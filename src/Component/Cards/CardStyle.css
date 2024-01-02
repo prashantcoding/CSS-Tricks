@@ -1,0 +1,37 @@
+.card__container {
+ 
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+}
+.card {
+  width: max-content;
+  color: white;
+}
+.card__container--image {
+  width: 200px;
+}
+
+.card_description--cardType {
+  opacity: 0.7;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 4em;
+  word-spacing: 0.5em;
+}
+.card_description_PriceDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_descripton--discount {
+  background-color: #0074e4;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+}
+.opacity-low {
+  opacity: 0.5;
+}

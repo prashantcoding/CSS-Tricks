@@ -31,12 +31,12 @@ const Slider = () => {
     <div className="slider__container">
       <div className="track__container">
         {slides.map((slide, index) => (
-          <div className="slide" key={index}>
+          <div className="slide" key={index} style={active === index ? activeStyle : {}}>
             <img
               className="slide--image"
               src={slide.img}
               alt=""
-              style={active === index ? activeStyle : {}}
+              
             />
           </div>
         ))}

@@ -1,0 +1,39 @@
+.searchbar__container {
+  position: sticky;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  font-size: 15px;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  align-content: center;
+}
+
+.searchbarItem {
+  display: flex;
+  padding: 0.5em;
+  gap: 1em;
+  align-content: center;
+  text-transform: capitalize;
+}
+.searchbarItem--item {
+  opacity: 0.5;
+}
+.searchbarItem--item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.searchbarItem--searchBar {
+  background: #202020;
+  margin: 0.3rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #fff;
+  max-width: 400px;
+  border-radius: 2rem;
+  border: 0;
+  outline: 0;
+}
